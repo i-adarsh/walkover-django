@@ -19,7 +19,11 @@ pipeline{
                     sh "sudo rm -rf /root/production/mcqquiz"
                     sh "sudo rm -rf /root/production/questions"
                     sh "sudo rm -rf /root/production/quiz_app"
-                    sh "sudo mv *!env /root/production/"
+                    sh "sudo mv Jenkinsfile /root/production/"
+                    sh "sudo mv README.md /root/production/"
+                    sh "sudo mv requirements.txt /root/production/"
+                    sh "sudo mv LICENSE /root/production/"
+                    sh "sudo mv Jenkinsfile /root/production/"
             }
         }
         
