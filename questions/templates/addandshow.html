@@ -1,0 +1,17 @@
+{% extends "base2.html"%}
+{% block content %}
+{% load crispy_forms_tags %}
+<div class="container-fluid">
+<h4 class="text-center alert alert-info">Add New Questions</h4>
+<div class="col-3">
+<form action="" method="POST">
+{% csrf_token %}
+    {% for el in form %}
+        <h5>{{el.label}}</h5>
+        {{el}}
+    {% endfor %}
+<input type="submit" class="btn btn-primary my-4" value="Add Question">
+</form>
+</div>
+</div>
+{% endblock content %}

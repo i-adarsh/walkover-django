@@ -1,0 +1,52 @@
+{% extends "base2.html"%}
+{% block content %}
+<div class="d-flex justify-content-center">
+<div class="col-lg-10">
+<div class="accordion" id="accordionExample">
+{% for test in tests %}
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="{{test.id}}_{{test.name|cut:" "}}">
+      <button class="accordion-button text-black" type="button" data-bs-toggle="collapse" data-bs-target="#{{test.name|cut:" "}}_{{test.id}}" aria-expanded="true" aria-controls="{{test.name|cut:" "}}_{{test.id}}">
+        {{test.name}}
+      </button>
+    </h2>
+    <div id="{{test.name|cut:" "}}_{{test.id}}" class="accordion-collapse collapse show" aria-labelledby="{{test.id}}_{{test.name|cut:" "}}" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                    <th scope="col">Username</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">Total Questions</th>
+                    <th scope="col">Correct Answers</th>
+                    <th scope="col">Wrong Answers</th>
+                    <th scope="col">Unattempted Question</th>
+                    <th scope="col">Score</th>
+                    </tr>
+                </thead>
+                {% for quiz in takenQuizes %}
+                {% if test.id == quiz.quiz.id %}
+                <tbody>
+                    <tr>
+                    <th scope="row">{{quiz.user.username}}</th>
+                    <td>{{quiz.user.email}}</td>
+                    <td>{{quiz.totalQuestions}}</td>
+                    <td>{{quiz.correctAnswers}}</td>
+                    <td>{{quiz.wrongAnswers}}</td>
+                    <td>{{quiz.unattemptedQuestion}}</td>
+                    <td>{{quiz.score}}%</td>
+                    </tr>
+                </tbody>
+                {% endif %}
+                {% endfor %}
+            </table>
+      </div>
+    </div>
+  </div>
+  <br>
+  <br>
+{% endfor %}
+</div>
+</div>
+</div>
+{% endblock content %}

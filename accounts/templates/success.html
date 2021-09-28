@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="global-container">
+	<div class="card login-form">
+	<div class="card-body">
+		<h3 class="card-title text-center">Hurray !!! <br /></h3>
+        <h4 align="center">Your mail is Verified :)</h4>
+		<div class="card-text text-center">
+			<!--
+			<div class="alert alert-danger alert-dismissible fade show" role="alert">Incorrect username or password.</div> -->
+            <br />
+			<p align="center">Please Check your Email</p>
+            <a class="btn btn-primary" href="{%url 'login_attempt'%}">Login</a>
+		</div>
+	</div>
+</div>
+</div>
+
+{%endblock %}

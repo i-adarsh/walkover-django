@@ -1,0 +1,9 @@
+version: "3.3"
+services: 
+  walkover_quiz:
+    image: walkover_quiz
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "80:80"

@@ -1,0 +1,40 @@
+{% extends "base2.html"%}
+{% block content %}
+<div class="d-flex justify-content-center">
+<div class="col-lg-10">
+<h4 class="text-center alert alert-info">Questions Present in Database</h4>
+{%if question %}
+<h4 align="center" class="text-center alert alert-warning">Table Data</h4>
+    <table class="table table-hover">
+    <thead>
+        <tr>
+        <th scope="col">ID</th>
+        <th scope="col">Questions</th>
+        <th scope="col">Option1</th>
+        <th scope="col">Option2</th>
+        <th scope="col">Option3</th>
+        <th scope="col">Option4</th>
+        <th scope="col">Correct</th>
+        </tr>
+    </thead>
+    {% for q in question %}
+    <tbody>
+        <tr>
+        <th scope="row">{{q.id}}</th>
+        <td>{{q}}</td>
+        <td>{{q.option1}}</td>
+        <td>{{q.option2}}</td>
+        <td>{{q.option3}}</td>
+        <td>{{q.option4}}</td>
+        <td>{{q.correct}}</td>
+        </tr>
+    </tbody>
+    {% endfor %}
+    </table>
+{% else %}
+<h4 class="text-center alert alert-warning">No Records Found</h4>
+{%endif%}
+</div>
+</div>
+</div>
+{% endblock content %}

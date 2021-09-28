@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% block content %}
+    <div class="d-flex justify-content-center mt-5">
+        <h3>Hello {{request.user.username}} | {{request.user.email}}</h3>
+    </div>
+    <div class="d-flex justify-content-center mt-5">
+    <h4>
+        Total No of Question : {{totalQuestions}}
+        <br>
+        Correct Answer Given : {{correctAnswers}}
+        <br>
+        Wrong Answer Given : {{wrongAnswers}}
+        <br>
+        Unattempted Questions : {{unattemptedQuestion}}
+        <br>
+        Your Score : {{score}}%
+    </h4>
+    </div>
+{% endblock content %}
