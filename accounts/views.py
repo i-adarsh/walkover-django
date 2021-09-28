@@ -113,7 +113,7 @@ def error_page(request):
 def send_mail_after_registration(email, token):
     subject = "Your accounts need to be verified"
     ip = "54.175.247.107"
-    msg = f"Hii, click on the below link to verify your account\n\n{ip}:8000/verify/{token}"
+    msg = f"Hii, click on the below link to verify your account\n\n{ip}/verify/{token}"
     email_from = settings.EMAIL_HOST_USER
     recipient_list = [email]
     send_mail(subject, msg, email_from, recipient_list)
