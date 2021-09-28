@@ -23,7 +23,7 @@ pipeline{
                     sh "sudo mv README.md /root/production/"
                     sh "sudo mv requirements.txt /root/production/"
                     sh "sudo mv LICENSE /root/production/"
-                    sh "sudo mv Jenkinsfile /root/production/"
+                    sh "sudo mv manage.py /root/production/"
             }
         }
         
