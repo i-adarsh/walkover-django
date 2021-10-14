@@ -78,7 +78,7 @@ Run command `$ sudo apt-get install git` for Linux
 >7. Open any browser and access the web application by following link    `http://localhost:8000/`
 
 ## Contributors
->[Adarsh Kumar](https://github.com/i-adaresh)
+>[Adarsh Kumar](https://github.com/i-adarsh)
 >
 >[Vaibhav](https://github.com/)
 >
