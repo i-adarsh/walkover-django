@@ -82,7 +82,7 @@ Run command `$ sudo apt-get install git` for Linux
 >
 >[Vaibhav](https://github.com/)
 >
->[Antriksh](https://github.com/Antriksh1234)
+>[Antriksh](https://github.com/)
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
