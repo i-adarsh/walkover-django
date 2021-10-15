@@ -2,6 +2,10 @@
 
 This is a full stack web application created using Django framework for back-end and html, css and JavaScript for front end. And added CI-CD pipeline through Jenkins. The main aim of this project that a registered admin can create test according to his/her needs and specifications and can view the result of each candidate.
 
+## Video Link
+
+[![Django-CICD](https://img.youtube.com/vi/Wgk-aSsuXJc/0.jpg)](https://www.youtube.com/watch?v=Wgk-aSsuXJc)
+
 ## Requirements
 
 ```bash
