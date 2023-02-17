@@ -84,9 +84,6 @@ Run command `$ sudo apt-get install git` for Linux
 ## Contributors
 >[Adarsh Kumar](https://github.com/i-adarsh)
 >
->[Vaibhav](https://github.com/)
->
->[Antriksh](https://github.com/)
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
